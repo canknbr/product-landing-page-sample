@@ -20,3 +20,51 @@
   --font-size-xxl: 28px;
   --font-size-xxxl: 34px;
 }
+body {
+  font-size: var(--font-size-s);
+  color: var(--dark-light);
+  background: linear-gradient(180deg, #eef2ff, rgba(238, 242, 255, 0));
+  min-height: 100vh;
+}
+.button {
+  padding: 16px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+}
+.primary-button {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--primary-shadow);
+}
+.secondary-button {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 52px;
+  height: 48px;
+}
+header .primary-button {
+  padding: 12px 24px;
+}
+nav {
+  color: var(--dark);
+  gap: 62px;
+  display: flex;
+}
+nav a:hover,
+nav a.active {
+  font-weight: 600;
+}
