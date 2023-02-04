@@ -25,6 +25,7 @@ body {
   color: var(--dark-light);
   background: linear-gradient(180deg, #eef2ff, rgba(238, 242, 255, 0));
   min-height: 100vh;
+  line-height: 1.5;
 }
 .button {
   padding: 16px 48px;
@@ -67,4 +68,75 @@ nav {
 nav a:hover,
 nav a.active {
   font-weight: 600;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#hero > * {
+  flex: 1;
+}
+.hero-body-wrapper .hero-sub-title {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.hero-title {
+  font-size: var(--font-size-xxl);
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+.hero-analytics {
+  display: flex;
+  margin-top: 72px;
+  gap: 48px;
+}
+.hero-analytics > * {
+  display: flex;
+  gap: 16px;
+}
+.hero-analytics-item-body h5 {
+  font-size: var(--font-size-xs);
+  color: var(--dark);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.hero-analytics-item-body h3 {
+  font-size: var(--font-size-m);
+  color: var(--dark);
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#companies {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background-color: var(--dark-extra-light);
+  padding: 48px 0;
+  border-radius: 8px;
+}
+.company-item {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.company-item:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
