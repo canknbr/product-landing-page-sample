@@ -300,6 +300,13 @@ section {
 .faq-item.active .faq-body {
   display: block;
 }
+
+.faq-item.active svg {
+  transform: rotate(180deg);
+}
+.faq-item.active svg path {
+  stroke: var(--white);
+}
 footer {
   background-color: var(--dark-extra-light);
   padding: 48px 32px;
