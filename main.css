@@ -363,3 +363,25 @@ footer .container {
   justify-content: center;
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column-reverse;
+  }
+  #features-horizontal .section-body {
+    flex-direction: column;
+  }
+  #features-vertical {
+    flex-direction: column;
+  }
+  .download-store-img {
+    display: none;
+  }
+  .section-intro,
+  #faq .section-body {
+    max-width: 100%;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+}
