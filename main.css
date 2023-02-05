@@ -76,10 +76,8 @@ section {
 .section-intro {
   max-width: 50ch;
   text-align: center;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   gap: 16px;
 }
@@ -198,7 +196,8 @@ section {
 }
 #features-vertical .section-intro {
   text-align: left;
-  width: 100%;
+  margin-left: unset;
+  margin-right: unset;
   margin-bottom: 48px;
 }
 #features-vertical .section-body {
@@ -224,4 +223,37 @@ section {
   color: var(--dark);
   font-weight: 700;
   margin-bottom: 16px;
+}
+#stores {
+  background-color: var(--primary);
+  padding: 100px 80px;
+  border-radius: 16px;
+  box-shadow: var(--primary-shadow);
+  position: relative;
+}
+#stores .section-intro {
+  text-align: left;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+#stores .section-intro h3,
+#stores .section-intro h2,
+#stores .section-intro li {
+  color: var(--white);
+  opacity: 0.8;
+}
+#stores .section-body {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.download-store-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 88px;
+  max-height: 100%;
 }
