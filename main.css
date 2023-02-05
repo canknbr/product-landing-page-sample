@@ -284,8 +284,10 @@ section {
   padding: 24px;
 }
 .faq-body {
-  padding: 24px;
-  display: none;
+  font-size: 0;
+  opacity: 0;
+  padding: 0;
+  transition: opacity 250ms, font-size 500ms 250ms, padding 500ms 250ms;
 }
 .faq-item.active {
   background-color: var(--primary);
@@ -298,7 +300,11 @@ section {
 }
 
 .faq-item.active .faq-body {
-  display: block;
+  color: var(--white);
+  padding: 24px;
+  font-size: inherit;
+  opacity: 1;
+  transition: opacity 500ms 250ms, font-size 250ms, padding 250ms;
 }
 
 .faq-item.active svg {
